@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;database=HotelBooking</property>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">songlong</property>
+    <property name="hibernate.show_sql">true</property>
+
+    <mapping class="com.vn.entity.Booking"/>
+    <mapping class="com.vn.entity.Guest"/>
+    <mapping class="com.vn.entity.RoomType"/>
+    <mapping class="com.vn.entity.User"/>
+  </session-factory>
+
+</hibernate-configuration>
